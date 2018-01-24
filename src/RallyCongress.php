@@ -4,12 +4,12 @@ namespace Travis;
 
 class RallyCongress
 {
-	public static function run($username, $authtoken, $method, $uri, $arguments = [], $page = 0)
-	{
-		// set endpoint
-		$endpoint = 'https://api.rallycongress.net/v3/'.$uri;
+    public static function run($username, $authtoken, $method, $uri, $arguments = [], $page = 0)
+    {
+        // set endpoint
+        $endpoint = 'https://api.rallycongress.net/v3/'.$uri;
 
-		// make headers
+        // make headers
         $headers = [
             'content-type:application/x-www-form-urlencoded',
         ];
@@ -31,8 +31,8 @@ class RallyCongress
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
         if (strtoupper($method) === 'POST')
         {
-        	curl_setopt($ch, CURLOPT_POST, true);
-        	curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
+            curl_setopt($ch, CURLOPT_POST, true);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
         }
         $response = curl_exec($ch);
         $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
@@ -68,5 +68,5 @@ class RallyCongress
 
         // return
         return $response;
-	}
+    }
 }

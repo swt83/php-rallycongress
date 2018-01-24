@@ -21,18 +21,18 @@ $action = 'letter';
 
 // contact info
 $contact = [
-	'prefix' => 'Other', // required field
-	'firstname' => 'Paul',
-	'lastname' => 'Tarsus',
-	'street' => '777 Pearl Gates',
-	'city' => 'Washington',
-	'state' => 'DC',
-	'zipcode' => '20002',
-	'phone' => '2025555555',
-	'email' => 'paul.tarsus@gmail.com',
-	'subject' => 'Test',
-	'message' => 'Hello world!',
-	'mode' => 'no_delivery', // for testing purposes
+    'prefix' => 'Other', // required field
+    'firstname' => 'Paul',
+    'lastname' => 'Tarsus',
+    'street' => '777 Pearl Gates',
+    'city' => 'Washington',
+    'state' => 'DC',
+    'zipcode' => '20002',
+    'phone' => '2025555555',
+    'email' => 'paul.tarsus@gmail.com',
+    'subject' => 'Test',
+    'message' => 'Hello world!',
+    'mode' => 'no_delivery', // for testing purposes
 ];
 
 // submit
