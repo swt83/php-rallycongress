@@ -39,6 +39,8 @@ $contact = [
 $response = RallyCongress::run($username, $authtoken, 'post', 'campaigns/'.$campaign_id.'/'.$action, $contact);
 ```
 
+See the [documentation](https://www.rallycongress.com/docs/api) for more information.
+
 ## Errors
 
 The library will throw an exception on any response code other than 200, 201, or 202.
