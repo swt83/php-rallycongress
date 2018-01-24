@@ -1,6 +1,6 @@
 {
-    "name": "vendor/package",
-    "description": "",
+    "name": "travis/rallycongress",
+    "description": "A PHP package for working w/ the Rally Congress API.",
     "homepage": "",
     "license": "MIT",
     "authors": [
@@ -12,19 +12,16 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": ""
+            "url": "git@github.com:swt83/php-ex.git"
         }
     ],
     "require": {
         "php": ">=5.3.0",
-        "illuminate/support": "4.1.*"
+        "travis/ex": "dev-master"
     },
     "autoload": {
-        "classmap": [
-            "src/commands"
-        ],
-        "psr-0": {
-            "Vendor\\": "src/"
+        "psr-4": {
+            "Travis\\": "src/"
         }
     },
     "minimum-stability": "dev"
