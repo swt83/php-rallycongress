@@ -44,3 +44,7 @@ See the [documentation](https://www.rallycongress.com/docs/api) for more informa
 ## Errors
 
 The library will throw an exception on any response code other than 200, 201, or 202.
+
+## Todo
+
+- Add some functionality for handling pages.
