@@ -54,6 +54,7 @@ class RallyCongress
         curl_close($ch);
 
         // decode response
+        $response = preg_replace('/\s+/', '', $response);
         $response = json_decode(utf8_encode($response));
 
         // catch error...
