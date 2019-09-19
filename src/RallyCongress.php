@@ -54,7 +54,7 @@ class RallyCongress
         curl_close($ch);
 
         // decode response
-        $response = json_decode($response);
+        $response = json_decode(utf8_encode($response));
 
         // catch error...
         if (!in_array($httpcode, [200, 201, 202]))
